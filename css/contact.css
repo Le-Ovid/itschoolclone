@@ -1,0 +1,71 @@
+/* welcome section */
+.welcome {
+    background-color: var(--bg-primary);
+    height: 50vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .welcome h1 {
+    text-align: center;
+  }
+  
+ 
+  .contact h2 {
+    text-align: center;
+    padding-top: var(--spacing-large);
+  }
+
+  .contact h2, .contact .paragraf, .contact .contact-list {
+    margin-bottom: var(--spacing-large);
+  }
+
+  .contact .contact-list {
+    display: flex;
+  }
+  .contact ul, .contact form {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-medium);
+    width: 50%;
+  }
+  .contact li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: var(--spacing-medium);
+  }
+  .contact textarea {
+    height: 100px;
+  }
+
+  .contact .material-symbols-outlined {
+    vertical-align: middle;
+    color: var(--text-primary);
+  }
+  .contact a:hover {
+    color: var(--text-primary);
+  }
+  .contact a, .contact .descriere, .contact input::placeholder {
+    color: gray;
+  }
+  .contact input {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: var(--spacing-medium);
+  }
+  .contact input[type="submit"] {
+    text-align: center;
+    color: var(--text-white);
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  @media (max-width: 768px) {
+    .contact .contact-list {
+      flex-direction: column;
+    }
+  }
